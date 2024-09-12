@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENXER Corp.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="blocks.png" alt="ABC Corp Logo" class="logo">
+        <h1>ZENXER CORP.</h1>
+    </header>
+    <main id="main-content">
+        <div id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Login</button>
+                <p id="login-message"></p>
+            </form>
+        </div>
+
+        <div id="admin-dashboard" class="dashboard hidden">
+            <h2>Admin Dashboard</h2>
+            <button id="logout">Logout</button>
+            <div id="admin-tasks">
+                <h3>Expense Tracker</h3>
+                <form id="expense-form">
+                    <label for="expense-description">Description:</label>
+                    <input type="text" id="expense-description" required>
+                    
+                    <label for="expense-amount">Amount (USD):</label>
+                    <input type="number" id="expense-amount" required>
+                    
+                    <button type="submit">Add Expense</button>
+                    <p id="expense-message"></p>
+                </form>
+                <ul id="expense-list"></ul>
+            </div>
+        </div>
+
+        <div id="employee-dashboard" class="dashboard hidden">
+            <h2>Employee Dashboard</h2>
+            <button id="logout-employee">Logout</button>
+            <div id="employee-tasks">
+                <h3>Investments List</h3>
+                <ul id="investment-list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

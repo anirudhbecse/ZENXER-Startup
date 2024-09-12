@@ -1,0 +1,170 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light gray background for a modern look */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #191414; /* Dark blue background for a professional look */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+.logo {
+    width: 150px; /* Increased size of the logo */
+    vertical-align: middle;
+    margin-right: 25px; /* Space between logo and text */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem; /* Slightly larger font size for the title */
+    font-weight: 700; /* Bold title */
+}
+
+/* Main Content Styling */
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Login Section Styling */
+#login-section {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem; /* Larger font size for better readability */
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003a6c; /* Matching dark blue color */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #002a4d; /* Slightly darker shade on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+#login-message {
+    color: #d9534f; /* Red color for error messages */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Dashboard Styling */
+.dashboard {
+    display: none;
+}
+
+.dashboard h2 {
+    font-size: 1.75rem;
+    margin-top: 0;
+    color: #003a6c; /* Dark blue color for headings */
+}
+
+button#logout,
+button#logout-employee {
+    background-color: #d9534f; /* Red background for logout buttons */
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button#logout:hover,
+button#logout-employee:hover {
+    background-color: #c9302c; /* Darker red shade on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+#admin-tasks,
+#employee-tasks {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#expense-list,
+#investment-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#expense-list li,
+#investment-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 60px; /* Smaller logo on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50px; /* Further reduce logo size on very small screens */
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+        padding: 10px;
+    }
+}
+
+
